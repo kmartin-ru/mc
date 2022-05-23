@@ -1,0 +1,42 @@
+.about__location {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $text-primary;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.about__title {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  font-family: "Yeseva One", "Times New Roman", serif;
+  color: $white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 52px;
+    line-height: 60px;
+  }
+}
+
+.about__description {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $text-primary;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

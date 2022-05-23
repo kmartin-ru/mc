@@ -1,0 +1,39 @@
+.review__info {
+  margin: 0;
+  padding: 0;
+}
+
+.review__author {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: $white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+.review__quote {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: $white-70;
+
+  @media (min-width: $tablet-width) {
+    line-height: 23px;
+  }
+}
+
+.review__time {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: $text-primary;
+
+  @media (min-width: $tablet-width) {
+    line-height: 19px;
+  }
+}

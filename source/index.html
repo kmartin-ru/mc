@@ -4,6 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Питомник Мейн-Кунов</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/roboto-light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/yesevaone-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 <body>
   <header class="page-header  section">
@@ -34,7 +40,7 @@
           <p class="section__description">Все представители нашего питомника имеют ветеринарный паспорт с отметками о прививках и документ с родословной</p>
           <ul class="nursery__nav  nursery-nav">
             <li class="nursery-nav__item">
-              <button class="nursery-nav__button" type="button">Коты</button>
+              <button class="nursery-nav__button nursery-nav__button--current" type="button">Коты</button>
             </li>
             <li class="nursery-nav__item">
               <button class="nursery-nav__button" type="button">Кошки</button>
@@ -44,15 +50,13 @@
             </li>
           </ul>
           <ul class="nursery__gallery  nursery-gallery">
-            <!-- <li class="nursery-gallery__item">
-              <img class="nursery-gallery__photo" src="" width="" height="" alt="Белоснежный кот на сплошном черном фоне. Вид сбоку">
-            </li>
-            <li class="nursery-gallery__item">
-              <img class="nursery-gallery__photo" src="" width="" height="" alt="Большой кот лежит и доволен">
-            </li> -->
-            <li class="nursery-gallery__item">
+            <li class="nursery-gallery__item nursery-gallery__item--current">
+              <!-- <img class="nursery-gallery__photo" src="" width="" height="" alt="Белоснежный кот на сплошном черном фоне. Вид сбоку">
+              <img class="nursery-gallery__photo" src="" width="" height="" alt="Большой кот лежит и доволен"> -->
               <img class="nursery-gallery__photo" src="https://via.placeholder.com/234x248.png" width="234" height="248" alt="Черный кот в темном помещении">
             </li>
+            <!-- <li class="nursery-gallery__item"></li>
+            <li class="nursery-gallery__item"></li> -->
           </ul>
           <div class="nursery__controls nursery-controls">
             <button class="nursery-controls__btn  nursery-controls__btn--prev" type="button">Предыдущий кот</button>
@@ -90,8 +94,8 @@
     <section class="our-advantages  section">
       <div class="section__wrapper">
         <div class="our-advantages__content">
-          <h2 class="our-advantages__title">Почему именно мы?</h2>
-          <p class="our-advantages__description">Приобретая животное в нашем питомнике, вы получите</p>
+          <h2 class="section__title">Почему именно мы?</h2>
+          <p class="section__description">Приобретая животное в нашем питомнике, вы получите</p>
           <ul class="our-advantages__list">
             <li class="our-advantages__item  our-advantages__item--marked">
               <p class="our-advantages__text">Бесплатное ветеринарное обслуживание 5 лет</p>
@@ -149,9 +153,9 @@
                 <p class="person__quote">Наш питомник занимается разведением Мейн-Кунов на протяжениие 15 лет. Мы в ответе за каждого приобретенного вами питомца</p>
               </blockquote>
               <div class="person__socials  person-socials">
-                <a class="socials__link" href="#">ВКонтакте</a>
-                <a class="socials__link" href="#">Твиттер</a>
-                <a class="socials__link" href="#">Фейсбук</a>
+                <a class="person-socials__link" href="#">ВКонтакте</a>
+                <a class="person-socials__link" href="#">Твиттер</a>
+                <a class="person-socials__link" href="#">Фейсбук</a>
               </div>
             </div>
           </div>
@@ -171,29 +175,29 @@
             <div class="faq__item">
               <button class="faq__title" type="button">С какого возраста можно забирать котенка из питомника?</button>
               <div class="faq__description">
-                <p>Есть важная причина, почему котенка стоит забирать домой только после трех месяцев, — это вакцинация. Первые прививки животному делают в возрасте 8 недель. Ревакцинация проводится через 3–4 недели. То есть котенок, покидающий дом позднее 12 недель, максимально защищен от различных вирусов и инфекций.</p>
-                <p>Так что, чтобы в дома появился психически и физически здоровый котенок, игривый, жизнерадостный, самостоятельный и воспитанный, не спешите забирать его от кошки-мамы раньше трех месяцев.</p>
+                <p class="faq__text">Есть важная причина, почему котенка стоит забирать домой только после трех месяцев, — это вакцинация. Первые прививки животному делают в возрасте 8 недель. Ревакцинация проводится через 3–4 недели. То есть котенок, покидающий дом позднее 12 недель, максимально защищен от различных вирусов и инфекций.</p>
+                <p class="faq__text">Так что, чтобы в дома появился психически и физически здоровый котенок, игривый, жизнерадостный, самостоятельный и воспитанный, не спешите забирать его от кошки-мамы раньше трех месяцев.</p>
               </div>
             </div>
             <div class="faq__item">
               <button class="faq__title" type="button">Как зарезервировать котенка?</button>
               <div class="faq__description">
-                <p>Есть важная причина, почему котенка стоит забирать домой только после трех месяцев, — это вакцинация. Первые прививки животному делают в возрасте 8 недель. Ревакцинация проводится через 3–4 недели. То есть котенок, покидающий дом позднее 12 недель, максимально защищен от различных вирусов и инфекций.</p>
-                <p>Так что, чтобы в дома появился психически и физически здоровый котенок, игривый, жизнерадостный, самостоятельный и воспитанный, не спешите забирать его от кошки-мамы раньше трех месяцев.</p>
+                <p class="faq__text">Есть важная причина, почему котенка стоит забирать домой только после трех месяцев, — это вакцинация. Первые прививки животному делают в возрасте 8 недель. Ревакцинация проводится через 3–4 недели. То есть котенок, покидающий дом позднее 12 недель, максимально защищен от различных вирусов и инфекций.</p>
+                <p class="faq__text">Так что, чтобы в дома появился психически и физически здоровый котенок, игривый, жизнерадостный, самостоятельный и воспитанный, не спешите забирать его от кошки-мамы раньше трех месяцев.</p>
               </div>
             </div>
             <div class="faq__item">
               <button class="faq__title" type="button">Можно ли купить кота, если я живу в другом городе?</button>
               <div class="faq__description">
-                <p>Есть важная причина, почему котенка стоит забирать домой только после трех месяцев, — это вакцинация. Первые прививки животному делают в возрасте 8 недель. Ревакцинация проводится через 3–4 недели. То есть котенок, покидающий дом позднее 12 недель, максимально защищен от различных вирусов и инфекций.</p>
-                <p>Так что, чтобы в дома появился психически и физически здоровый котенок, игривый, жизнерадостный, самостоятельный и воспитанный, не спешите забирать его от кошки-мамы раньше трех месяцев.</p>
+                <p class="faq__text">Есть важная причина, почему котенка стоит забирать домой только после трех месяцев, — это вакцинация. Первые прививки животному делают в возрасте 8 недель. Ревакцинация проводится через 3–4 недели. То есть котенок, покидающий дом позднее 12 недель, максимально защищен от различных вирусов и инфекций.</p>
+                <p class="faq__text">Так что, чтобы в дома появился психически и физически здоровый котенок, игривый, жизнерадостный, самостоятельный и воспитанный, не спешите забирать его от кошки-мамы раньше трех месяцев.</p>
               </div>
             </div>
             <div class="faq__item">
               <button class="faq__title" type="button">Как подготовить дом к приему нового питомца?</button>
               <div class="faq__description">
-                <p>Есть важная причина, почему котенка стоит забирать домой только после трех месяцев, — это вакцинация. Первые прививки животному делают в возрасте 8 недель. Ревакцинация проводится через 3–4 недели. То есть котенок, покидающий дом позднее 12 недель, максимально защищен от различных вирусов и инфекций.</p>
-                <p>Так что, чтобы в дома появился психически и физически здоровый котенок, игривый, жизнерадостный, самостоятельный и воспитанный, не спешите забирать его от кошки-мамы раньше трех месяцев.</p>
+                <p class="faq__text">Есть важная причина, почему котенка стоит забирать домой только после трех месяцев, — это вакцинация. Первые прививки животному делают в возрасте 8 недель. Ревакцинация проводится через 3–4 недели. То есть котенок, покидающий дом позднее 12 недель, максимально защищен от различных вирусов и инфекций.</p>
+                <p class="faq__text">Так что, чтобы в дома появился психически и физически здоровый котенок, игривый, жизнерадостный, самостоятельный и воспитанный, не спешите забирать его от кошки-мамы раньше трех месяцев.</p>
               </div>
             </div>
           </div>
@@ -235,7 +239,7 @@
           <a class="page-footer-socials__link" href="#">Твиттер</a>
           <a class="page-footer-socials__link" href="#">ВКонтакте</a>
         </div>
-        <p class="page-footer__adress">Новосибирск, Пушкинский проспект, 19</p>
+        <p class="page-footer__address">Новосибирск, Пушкинский проспект, 19</p>
         <a class="page-footer__phone" href="tel:+73839006465">+7 (383) 900-64-65</a>
       </div>
     </div>

@@ -1,0 +1,32 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 141px;
+  height: 40px;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: $white;
+  text-decoration: none;
+
+  border: 1px solid $text-primary;
+
+  &:hover,
+  &:focus {
+    background-color: $text-primary;
+  }
+
+  &:active {
+    color: $white-30;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 53px;
+
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
