@@ -1,3 +1,20 @@
+.review__photo {
+  width: 242px;
+  height: 166px;
+
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    width: 302px;
+    height: 208px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 481px;
+    height: 331px;
+  }
+}
+
 .review__info {
   margin: 0;
   padding: 0;

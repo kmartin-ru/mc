@@ -1,0 +1,58 @@
+.pet-care-info__title {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: $text-primary;
+
+  @media (min-width: $tablet-width) {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+
+.pet-care-info__description {
+  margin: 0;
+
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: $white;
+
+  @media (min-width: $tablet-width) {
+    line-height: 23px;
+  }
+}
+
+.pet-care-info__link {
+  color: $white;
+  text-decoration: none;
+}
+
+.pet-care-info__icon {
+  width: 10px;
+  height: 20px;
+
+  fill: none;
+  stroke: $white;
+
+  @media (min-width: $tablet-width) {
+    width: 12px;
+    height: 17px;
+  }
+}
+
+.pet-care-info__icon--mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.pet-care-info__icon--tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

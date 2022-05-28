@@ -1,4 +1,39 @@
+.review-socials {
+  display: flex;
+}
+
 .review-socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+
   color: $text-primary;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.person-socials__icon--tw {
+  width: 16px;
+  height: 12px;
+
+  @media (min-width: $tablet-width) {
+    width: 14px;
+    height: 10px;
+  }
+}
+
+.person-socials__icon--vk {
+  width: 18px;
+  height: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 13px;
+    height: 8px;
+  }
 }

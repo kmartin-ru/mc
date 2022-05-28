@@ -1,0 +1,28 @@
+.logo {
+  width: 50px;
+  height: 22px;
+
+  fill: $text-primary;
+  stroke: $section-bg-2;
+  stroke-width: 0.8;
+
+  @media (min-width: $tablet-width) {
+    width: 55px;
+    height: 25px;
+  }
+}
+
+.logo--page-footer {
+  width: 55px;
+  height: 25px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 50px;
+    height: 22px;
+  }
+}

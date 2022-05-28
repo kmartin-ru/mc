@@ -1,0 +1,43 @@
+.reviews-controls {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.reviews-controls__button {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.reviews-controls__icon {
+  width: 10px;
+  height: 20px;
+
+  fill: none;
+  stroke: $text-primary;
+  stroke-width: 1;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 18px;
+  }
+}
+
+.reviews-controls__icon--mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.reviews-controls__icon--tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

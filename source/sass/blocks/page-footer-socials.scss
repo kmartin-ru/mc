@@ -1,4 +1,39 @@
+.page-footer-socials {
+  display: flex;
+}
+
 .page-footer-socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+
   color: $text-primary;
   text-decoration: none;
+}
+
+.page-footer-socials__icon--fb {
+  width: 7px;
+  height: 16px;
+}
+
+.page-footer-socials__icon--tw {
+  width: 22px;
+  height: 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 20px;
+    height: 14px;
+  }
+}
+
+.page-footer-socials__icon--vk {
+  width: 25px;
+  height: 14px;
+
+  @media (min-width: $tablet-width) {
+    width: 21px;
+    height: 12px;
+  }
 }

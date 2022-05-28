@@ -12,3 +12,58 @@
 .nursery-gallery__item--current {
   display: block;
 }
+
+.nursery-gallery__photo {
+  display: none;
+  object-fit: cover;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.nursery-gallery__photo--1 {
+  display: block;
+  width: 234px;
+  height: 248px;
+
+  @media (min-width: $tablet-width) {
+    width: 474px;
+    height: 494px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 471px;
+    height: 485px;
+  }
+}
+
+.nursery-gallery__photo--2 {
+  width: 234px;
+  height: 248px;
+
+  @media (min-width: $tablet-width) {
+    width: 470px;
+    height: 197px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 519px;
+    height: 214px;
+  }
+}
+
+.nursery-gallery__photo--3 {
+  width: 234px;
+  height: 248px;
+
+  @media (min-width: $tablet-width) {
+    width: 405px;
+    height: 197px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 519px;
+    height: 241px;
+  }
+}

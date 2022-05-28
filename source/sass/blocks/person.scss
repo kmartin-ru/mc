@@ -1,3 +1,20 @@
+.person__photo {
+  width: 126px;
+  height: 126px;
+
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    width: 207px;
+    height: 207px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 360px;
+    height: 360px;
+  }
+}
+
 .person__info {
   margin: 0;
   padding: 0;

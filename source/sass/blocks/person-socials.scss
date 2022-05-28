@@ -1,4 +1,49 @@
+.person__socials {
+  display: flex;
+}
+
 .person-socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+
   color: $white;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.person-socials__icon--fb {
+  width: 6px;
+  height: 12px;
+
+  @media (min-width: $tablet-width) {
+    width: 7px;
+    height: 15px;
+  }
+}
+
+.person-socials__icon--tw {
+  width: 16px;
+  height: 11px;
+
+  @media (min-width: $tablet-width) {
+    width: 20px;
+    height: 14px;
+  }
+}
+
+.person-socials__icon--vk {
+  width: 13px;
+  height: 9px;
+
+  @media (min-width: $tablet-width) {
+    width: 21px;
+    height: 12px;
+  }
 }

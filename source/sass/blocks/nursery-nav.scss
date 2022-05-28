@@ -20,11 +20,6 @@
   border: none;
   cursor: pointer;
 
-  &:not(&--current):hover,
-  &:not(&--current):focus {
-    color: $white-30;
-  }
-
   &:not(&--current):active {
     color: $white;
   }

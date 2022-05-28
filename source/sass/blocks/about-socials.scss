@@ -1,4 +1,33 @@
+.about-socials {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
 .about-socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+
   color: $white;
   text-decoration: none;
+}
+
+.about-socials__icon--vk {
+  width: 13px;
+  height: 9px;
+}
+
+.about-socials__icon--tw {
+  width: 16px;
+  height: 11px;
+}
+
+.about-socials__icon--fb {
+  width: 6px;
+  height: 12px;
 }

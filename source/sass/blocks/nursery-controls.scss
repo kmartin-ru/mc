@@ -1,0 +1,31 @@
+.nursery-controls {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.nursery-controls__button {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nursery-controls__icon {
+  width: 10px;
+  height: 20px;
+
+  fill: none;
+  stroke: $text-primary;
+  stroke-width: 1;
+
+  @media (min-width: $tablet-width) {
+    width: 13px;
+    height: 30px;
+
+    stroke-width: 2;
+  }
+}
