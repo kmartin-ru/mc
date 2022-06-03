@@ -1,5 +1,20 @@
+.pet-care-info__item {
+  position: relative;
+
+  margin-bottom: 30px;
+  padding: 21px 51px 18px 25px;
+
+  background: $black-30;
+  border: 1px solid $text-primary;
+}
+
+.pet-care-info__item:last-child {
+  margin-bottom: 0;
+}
+
 .pet-care-info__title {
   margin: 0;
+  margin-bottom: 10px;
 
   font-weight: 700;
   font-size: 18px;
@@ -26,8 +41,20 @@
 }
 
 .pet-care-info__link {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 100%;
+
   color: $white;
   text-decoration: none;
+
+  background: $text-primary;
 }
 
 .pet-care-info__icon {

@@ -1,17 +1,36 @@
 .nursery-controls {
+  position: absolute;
+  top: 160px;
+
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
   @media (min-width: $desktop-width) {
     display: none;
   }
 }
 
 .nursery-controls__button {
+  position: absolute;
+
   display: block;
+  height: 40px;
+  width: 40px;
   margin: 0;
   padding: 0;
 
   background: none;
   border: none;
   cursor: pointer;
+}
+
+.nursery-controls__button--prev {
+  left: -15px;
+}
+
+.nursery-controls__button--next {
+  right: -15px;
 }
 
 .nursery-controls__icon {

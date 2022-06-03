@@ -1,6 +1,13 @@
+.person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .person__photo {
   width: 126px;
   height: 126px;
+  margin-bottom: 18px;
 
   object-fit: cover;
 
@@ -17,10 +24,16 @@
 
 .person__info {
   margin: 0;
-  padding: 0;
+  margin-bottom: 18px;
+  padding: 0 10px;
+
+  text-align: center;
 }
 
 .person__name {
+  display: block;
+  margin-bottom: 2px;
+
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -35,6 +48,7 @@
 
 .person__description {
   margin: 0;
+  margin-bottom: 16px;
 
   font-weight: 400;
   font-size: 14px;

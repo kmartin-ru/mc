@@ -6,16 +6,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
 
   color: $white;
   text-decoration: none;
+}
 
-  @media (min-width: $tablet-width) {
-    width: 24px;
-    height: 24px;
-  }
+.person-socials__link:last-child {
+  margin-right: 0;
 }
 
 .person-socials__icon--fb {

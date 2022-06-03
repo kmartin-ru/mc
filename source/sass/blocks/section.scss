@@ -12,13 +12,16 @@
 }
 
 .section__title {
-  margin: 0;
+  width: 230px;
+  margin: 0 auto;
+  margin-bottom: 23px;
 
   font-weight: 400;
   font-size: 28px;
   line-height: 32px;
   font-family: "Yeseva One", "Times New Roman", serif;
   color: $white;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -26,16 +29,42 @@
   }
 }
 
+.section__title--pet-care {
+  margin-bottom: 34px;
+}
+
+.section__title--reviews {
+  margin-bottom: 53px;
+}
+
 .section__description {
   margin: 0;
+  margin-bottom: 30px;
 
   font-weight: 300;
   font-size: 14px;
   line-height: 20px;
   color: $text-primary;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 26px;
   }
+}
+
+.section__description--pet-features {
+  margin-bottom: 24px;
+}
+
+.section__description--our-advantages {
+  margin-bottom: 35px;
+}
+
+.section__description--our-team {
+  margin-bottom: 35px;
+}
+
+.section__description--faq {
+  margin-bottom: 35px;
 }

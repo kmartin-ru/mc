@@ -1,9 +1,19 @@
 .nursery-nav {
   display: flex;
+  justify-content: center;
   margin: 0;
+  margin-bottom: 35px;
   padding: 0;
 
   list-style: none;
+}
+
+.nursery-nav__item {
+  margin-right: 45px;
+}
+
+.nursery-nav__item:last-child {
+  margin-right: 0;
 }
 
 .nursery-nav__button {

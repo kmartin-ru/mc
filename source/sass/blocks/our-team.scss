@@ -1,3 +1,29 @@
 .our-team {
-  background-color: $section-bg-3;
+  padding-top: 54px;
+  padding-bottom: 60px;
+
+  background-color: $section-bg;
+}
+
+.our-team__group {
+  position: relative;
+
+  padding-bottom: 9px;
+}
+
+.our-team__group::before {
+  content: "";
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  height: 275px;
+
+  background: $section-bg-2;
+}
+
+.our-team__list {
+  position: relative;
 }

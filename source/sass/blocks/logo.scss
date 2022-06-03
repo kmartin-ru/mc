@@ -15,6 +15,7 @@
 .logo--page-footer {
   width: 55px;
   height: 25px;
+  order: 2;
 
   @media (min-width: $tablet-width) {
     display: none;

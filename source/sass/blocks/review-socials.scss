@@ -6,16 +6,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
+  margin-right: 17px;
 
   color: $text-primary;
   text-decoration: none;
 
-  @media (min-width: $tablet-width) {
-    width: 16px;
-    height: 16px;
-  }
+  border: 1px solid $text-primary;
+}
+
+.review-socials__link:last-child {
+  margin-right: 0;
 }
 
 .person-socials__icon--tw {

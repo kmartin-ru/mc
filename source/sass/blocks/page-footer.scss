@@ -1,9 +1,19 @@
 .page-footer {
+  padding-top: 35px;
+  padding-bottom: 41px;
+
   background-color: $section-bg-3;
+}
+
+.page-footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .page-footer__address {
   margin: 0;
+  margin-bottom: 10px;
 
   font-weight: 400;
   font-size: 14px;
@@ -16,6 +26,9 @@
 }
 
 .page-footer__phone {
+  display: block;
+  margin-bottom: 14px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;

@@ -1,9 +1,20 @@
 .our-team-controls {
+  position: absolute;
+  top: 42px;
+  left: 50%;
+  transform: translateX(-50%);
+
   display: flex;
+  justify-content: space-between;
+  width: 204px;
 }
 
 .our-team-controls__button {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
   margin: 0;
   padding: 0;
 

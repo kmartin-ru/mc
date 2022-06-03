@@ -1,17 +1,40 @@
 .reviews-controls {
+  position: absolute;
+  top: 64px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
   @media (min-width: $desktop-width) {
     display: none;
   }
 }
 
 .reviews-controls__button {
-  display: block;
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
   margin: 0;
   padding: 0;
 
   background: none;
   border: none;
   cursor: pointer;
+}
+
+.reviews-controls__button--prev {
+  left: -15px;
+}
+
+.reviews-controls__button--next {
+  right: -15px;
 }
 
 .reviews-controls__icon {
