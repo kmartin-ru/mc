@@ -2,6 +2,10 @@
   min-height: 617px;
 
   background-color: $section-bg;
+
+  @media (min-width: $tablet-width) {
+    min-height: 595px;
+  }
 }
 
 .page-header__top {
@@ -13,4 +17,8 @@
 
 .page-header__bottom {
   padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 66px;
+  }
 }

@@ -1,5 +1,11 @@
 .person__socials {
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    margin-left: -8px;
+  }
 }
 
 .person-socials__link {
@@ -12,6 +18,10 @@
 
   color: $white;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 2px;
+  }
 }
 
 .person-socials__link:last-child {
@@ -23,8 +33,8 @@
   height: 12px;
 
   @media (min-width: $tablet-width) {
-    width: 7px;
-    height: 15px;
+    width: 8px;
+    height: 16px;
   }
 }
 

@@ -3,6 +3,11 @@
   padding-bottom: 54px;
 
   background-color: $section-bg-2;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 46px;
+    padding-bottom: 68px;
+  }
 }
 
 .pet-features__group {
@@ -22,6 +27,13 @@
 
   background: $section-bg-3;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    top: 73px;
+
+    width: 342px;
+    height: 348px;
+  }
 }
 
 .pet-features__group::after {
@@ -37,6 +49,13 @@
 
   border: 1px solid $text-primary;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    top: 33px;
+
+    width: 416px;
+    height: 424px;
+  }
 }
 
 .pet-features__photo {
@@ -53,6 +72,8 @@
   @media (min-width: $tablet-width) {
     width: 400px;
     height: 439px;
+
+    transform: translateX(15px);
   }
 
   @media (min-width: $desktop-width) {
@@ -87,6 +108,11 @@
 
   background: $text-primary;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 10px;
+    height: 10px;
+  }
 }
 
 .pet-features__item:last-child {
@@ -104,5 +130,86 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 23px;
+  }
+}
+
+.pet-features__item--1 {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 125px;
+    left: -20px;
+
+    width: 170px;
+
+    text-align: right;
+  }
+}
+
+.pet-features__item--1::before {
+  @media (min-width: $tablet-width) {
+    top: 5px;
+    right: -22px;
+    left: auto;
+  }
+}
+
+.pet-features__item--1 .pet-features__text {
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.pet-features__item--2 {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 198px;
+    right: -21px;
+
+    width: 140px;
+  }
+}
+
+.pet-features__item--2::before {
+  @media (min-width: $tablet-width) {
+    top: 4px;
+    left: -24px;
+  }
+}
+
+.pet-features__item--3 {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 345px;
+    right: 34px;
+
+    width: 110px;
+  }
+}
+
+.pet-features__item--3::before {
+  @media (min-width: $tablet-width) {
+    top: 4px;
+    left: -25px;
+  }
+}
+
+.pet-features__item--4 {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 317px;
+    left: 0;
+
+    width: 140px;
+
+    text-align: right;
+  }
+}
+
+.pet-features__item--4::before {
+  @media (min-width: $tablet-width) {
+    top: 5px;
+    right: -16px;
+    left: auto;
   }
 }

@@ -3,10 +3,44 @@
   padding-bottom: 30px;
 
   background-color: $section-bg-2;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 138px;
+    padding-bottom: 42px;
+  }
+}
+
+.faq__list {
+  @media (min-width: $tablet-width) {
+    padding-right: 15px;
+    padding-left: 120px;
+  }
 }
 
 .faq__item {
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    margin-bottom: 25px;
+  }
+}
+
+.faq__item::before {
+  @media (min-width: $tablet-width) {
+    content: attr(data-count);
+
+    position: absolute;
+    top: 9px;
+    left: -80px;
+
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
+    color: $text-primary;
+  }
 }
 
 .faq__item:last-child {
@@ -35,8 +69,8 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    min-height: 77px;
-    padding: 30px 26px 34px;
+    min-height: 76px;
+    padding: 20px 129px 18px 29px;
 
     font-size: 16px;
     line-height: 19px;
@@ -60,6 +94,10 @@
 
   background: none;
   border-left: 1px solid $border;
+
+  @media (min-width: $tablet-width) {
+    width: 72px;
+  }
 }
 
 .faq__item--open .faq__button {
@@ -76,6 +114,10 @@
 
   border: 0.5px solid #544332;
   border-top: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 142px 24px 29px;
+  }
 }
 
 .faq__item--open .faq__description {
@@ -92,6 +134,8 @@
   color: $text-secondary;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+
     font-size: 16px;
     line-height: 25px;
   }

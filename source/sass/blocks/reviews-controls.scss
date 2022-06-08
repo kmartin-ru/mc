@@ -8,6 +8,12 @@
   justify-content: space-between;
   width: 100%;
 
+  @media (min-width: $tablet-width) {
+    top: 127px;
+
+    width: 452px;
+  }
+
   @media (min-width: $desktop-width) {
     display: none;
   }
@@ -27,6 +33,11 @@
   background: none;
   border: none;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 30px;
+  }
 }
 
 .reviews-controls__button--prev {
@@ -48,6 +59,8 @@
   @media (min-width: $tablet-width) {
     width: 60px;
     height: 18px;
+
+    stroke-width: 0.5;
   }
 }
 

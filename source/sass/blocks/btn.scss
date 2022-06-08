@@ -31,3 +31,10 @@
     line-height: 16px;
   }
 }
+
+.btn--about {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 54px;
+  }
+}

@@ -1,5 +1,11 @@
 .about {
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+
+    text-align: left;
+  }
 }
 
 .about__location {
@@ -12,6 +18,8 @@
   color: $text-primary;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+
     font-size: 16px;
     line-height: 24px;
   }
@@ -28,6 +36,8 @@
   color: $white;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 18px;
+
     font-size: 52px;
     line-height: 60px;
   }
@@ -43,6 +53,9 @@
   color: $text-primary;
 
   @media (min-width: $tablet-width) {
+    width: 270px;
+    margin-bottom: 50px;
+
     font-size: 16px;
     line-height: 24px;
   }

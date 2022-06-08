@@ -3,6 +3,11 @@
   padding-bottom: 60px;
 
   background-color: $section-bg-2;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 41px;
+    padding-bottom: 87px;
+  }
 }
 
 .reviews__group {
@@ -20,4 +25,10 @@
   height: 357px;
 
   background: $section-bg;
+
+  @media (min-width: $tablet-width) {
+    right: 60px;
+    left: 60px;
+    height: 368px;
+  }
 }

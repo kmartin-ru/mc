@@ -7,6 +7,17 @@
   display: flex;
   justify-content: space-between;
   width: 204px;
+
+  @media (min-width: $tablet-width) {
+    top: auto;
+    right: 0;
+    bottom: -102px;
+    left: auto;
+
+    width: 317px;
+
+    transform: none;
+  }
 }
 
 .our-team-controls__button {

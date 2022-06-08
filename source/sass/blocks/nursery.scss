@@ -3,10 +3,19 @@
   padding-bottom: 30px;
 
   background-color: $section-bg-2;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 100px;
+    padding-bottom: 45px;
+  }
 }
 
 .nursery__group {
   position: relative;
 
   margin-bottom: 45px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
 }

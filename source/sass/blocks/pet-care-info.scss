@@ -6,6 +6,18 @@
 
   background: $black-30;
   border: 1px solid $text-primary;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 558px;
+    min-height: 168px;
+    margin: 0 auto;
+    margin-bottom: 23px;
+    padding: 25px 120px 25px 49px;
+  }
 }
 
 .pet-care-info__item:last-child {
@@ -55,6 +67,10 @@
   text-decoration: none;
 
   background: $text-primary;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+  }
 }
 
 .pet-care-info__icon {

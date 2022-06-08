@@ -3,4 +3,9 @@
   padding-bottom: 57px;
 
   background-color: $section-bg-2;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 90px;
+    padding-bottom: 102px;
+  }
 }

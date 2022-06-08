@@ -24,6 +24,8 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    width: auto;
+
     font-size: 36px;
     line-height: 42px;
   }
@@ -31,10 +33,18 @@
 
 .section__title--pet-care {
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 38px;
+  }
 }
 
 .section__title--reviews {
   margin-bottom: 53px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 49px;
+  }
 }
 
 .section__description {
@@ -48,6 +58,10 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    width: 520px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+
     font-size: 16px;
     line-height: 26px;
   }
@@ -55,16 +69,33 @@
 
 .section__description--pet-features {
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    width: 510px;
+    margin-bottom: 45px;
+  }
 }
 
 .section__description--our-advantages {
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+  }
 }
 
 .section__description--our-team {
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
 }
 
 .section__description--faq {
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+  }
 }

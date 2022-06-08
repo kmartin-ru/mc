@@ -3,12 +3,24 @@
   padding-bottom: 60px;
 
   background-color: $section-bg;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 84px;
+    padding-bottom: 193px;
+  }
 }
 
 .our-team__group {
   position: relative;
 
   padding-bottom: 9px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 409px;
+    margin-right: 33px;
+    margin-left: 7px;
+    border: 1px solid $text-primary;
+  }
 }
 
 .our-team__group::before {
@@ -22,8 +34,21 @@
   height: 275px;
 
   background: $section-bg-2;
+
+  @media (min-width: $tablet-width) {
+    top: 24px;
+    right: 24px;
+    bottom: 24px;
+    left: 24px;
+
+    height: auto;
+  }
 }
 
 .our-team__list {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
 }
