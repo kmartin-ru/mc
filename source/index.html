@@ -13,9 +13,9 @@
   </head>
   <body>
     <header class="page-header  section">
-      <div class="section__wrapper">
+      <div class="section__wrapper  section__wrapper--page-header">
         <div class="page-header__top">
-          <svg class="logo" width="50" height="22" aria-hidden="true" focusable="false">
+          <svg class="logo" width="50" height="23" aria-hidden="true" focusable="false">
             <use xlink:href="img/sprite.svg#icon-logo"></use>
           </svg>
         </div>
@@ -24,7 +24,7 @@
             <p class="about__location">Новосибирск</p>
             <h1 class="about__title">Питомник Мейн-Кунов</h1>
             <p class="about__description">Первый питомник с расширенным спектром услуг</p>
-            <a class="about__link  btn  btn--about" href="#">Смотреть котиков</a>
+            <a class="about__link  btn  btn--about" href="#"><span data-hover="Смотреть котиков">Смотреть котиков</span></a>
             <div class="about__socials  about-socials">
               <a class="about-socials__link" href="#" aria-label="ВКонтакте">
                 <svg class="about-socials__icon  about-socials__icon--vk" width="13" height="9" aria-hidden="true" focusable="false">
@@ -50,8 +50,8 @@
       <section class="nursery  section">
         <div class="section__wrapper">
           <div class="nursery__content">
-            <h2 class="section__title">Питомцы</h2>
-            <p class="section__description">Все представители нашего питомника имеют ветеринарный паспорт с отметками о прививках и документ с родословной</p>
+            <h2 class="section__title  section__title--nursery">Питомцы</h2>
+            <p class="section__description  section__description--nursery">Все представители нашего питомника имеют ветеринарный паспорт с отметками о прививках и документ с родословной</p>
             <div class="nursery__group">
               <ul class="nursery__nav  nursery-nav">
                 <li class="nursery-nav__item">
@@ -65,49 +65,55 @@
                 </li>
               </ul>
               <ul class="nursery__gallery  nursery-gallery">
-                <li class="nursery-gallery__item nursery-gallery__item--current">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1366px)"
-                    srcset="img/nursery-gallery-photo-1-desktop.webp 1x, img/nursery-gallery-photo-1-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/nursery-gallery-photo-1-tablet.webp 1x, img/nursery-gallery-photo-1-tablet@2x.webp 2x">
-                    <source type="image/webp"
-                    srcset="img/nursery-gallery-photo-1-mobile.webp 1x, img/nursery-gallery-photo-1-mobile@2x.webp 2x">
-                    <source media="(min-width: 1366px)"
-                    srcset="img/nursery-gallery-photo-1-desktop.jpg 1x, img/nursery-gallery-photo-1-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)"
-                    srcset="img/nursery-gallery-photo-1-tablet.jpg 1x, img/nursery-gallery-photo-1-tablet@2x.jpg 2x">
-                    <img class="nursery-gallery__photo nursery-gallery__photo--1" src="img/nursery-gallery-photo-1-mobile.jpg"
-                    srcset="img/nursery-gallery-photo-1-mobile@2x.jpg 2x" width="234" height="248" alt="Черный кот в темном помещении">
-                  </picture>
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1366px)"
-                    srcset="img/nursery-gallery-photo-2-desktop.webp 1x, img/nursery-gallery-photo-2-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/nursery-gallery-photo-2-tablet.webp 1x, img/nursery-gallery-photo-2-tablet@2x.webp 2x">
-                    <source type="image/webp"
-                    srcset="img/nursery-gallery-photo-2-mobile.webp 1x, img/nursery-gallery-photo-2-mobile@2x.webp 2x">
-                    <source media="(min-width: 1366px)"
-                    srcset="img/nursery-gallery-photo-2-desktop.jpg 1x, img/nursery-gallery-photo-2-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)"
-                    srcset="img/nursery-gallery-photo-2-tablet.jpg 1x, img/nursery-gallery-photo-2-tablet@2x.jpg 2x">
-                    <img class="nursery-gallery__photo nursery-gallery__photo--2" src="img/nursery-gallery-photo-2-mobile.jpg"
-                    srcset="img/nursery-gallery-photo-2-mobile@2x.jpg 2x" width="234" height="248" alt="Белоснежный кот на сплошном черном фоне. Вид сбоку">
-                  </picture>
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1366px)"
-                    srcset="img/nursery-gallery-photo-3-desktop.webp 1x, img/nursery-gallery-photo-3-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/nursery-gallery-photo-3-tablet.webp 1x, img/nursery-gallery-photo-3-tablet@2x.webp 2x">
-                    <source type="image/webp"
-                    srcset="img/nursery-gallery-photo-3-mobile.webp 1x, img/nursery-gallery-photo-3-mobile@2x.webp 2x">
-                    <source media="(min-width: 1366px)"
-                    srcset="img/nursery-gallery-photo-3-desktop.jpg 1x, img/nursery-gallery-photo-3-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)"
-                    srcset="img/nursery-gallery-photo-3-tablet.jpg 1x, img/nursery-gallery-photo-3-tablet@2x.jpg 2x">
-                    <img class="nursery-gallery__photo nursery-gallery__photo--3" src="img/nursery-gallery-photo-3-mobile.jpg"
-                    srcset="img/nursery-gallery-photo-3-mobile@2x.jpg 2x" width="234" height="248" alt="Большой кот лежит и доволен">
-                  </picture>
+                <li class="nursery-gallery__item">
+                  <p class="nursery-gallery__picture">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1366px)"
+                      srcset="img/nursery-gallery-photo-1-desktop.webp 1x, img/nursery-gallery-photo-1-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/nursery-gallery-photo-1-tablet.webp 1x, img/nursery-gallery-photo-1-tablet@2x.webp 2x">
+                      <source type="image/webp"
+                      srcset="img/nursery-gallery-photo-1-mobile.webp 1x, img/nursery-gallery-photo-1-mobile@2x.webp 2x">
+                      <source media="(min-width: 1366px)"
+                      srcset="img/nursery-gallery-photo-1-desktop.jpg 1x, img/nursery-gallery-photo-1-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)"
+                      srcset="img/nursery-gallery-photo-1-tablet.jpg 1x, img/nursery-gallery-photo-1-tablet@2x.jpg 2x">
+                      <img class="nursery-gallery__photo nursery-gallery__photo--1" src="img/nursery-gallery-photo-1-mobile.jpg"
+                      srcset="img/nursery-gallery-photo-1-mobile@2x.jpg 2x" width="234" height="248" alt="Белоснежный кот на сплошном черном фоне. Вид сбоку">
+                    </picture>
+                  </p>
+                  <p class="nursery-gallery__picture  nursery-gallery__picture--tall">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1366px)"
+                      srcset="img/nursery-gallery-photo-2-desktop.webp 1x, img/nursery-gallery-photo-2-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/nursery-gallery-photo-2-tablet.webp 1x, img/nursery-gallery-photo-2-tablet@2x.webp 2x">
+                      <source type="image/webp"
+                      srcset="img/nursery-gallery-photo-2-mobile.webp 1x, img/nursery-gallery-photo-2-mobile@2x.webp 2x">
+                      <source media="(min-width: 1366px)"
+                      srcset="img/nursery-gallery-photo-2-desktop.jpg 1x, img/nursery-gallery-photo-2-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)"
+                      srcset="img/nursery-gallery-photo-2-tablet.jpg 1x, img/nursery-gallery-photo-2-tablet@2x.jpg 2x">
+                      <img class="nursery-gallery__photo nursery-gallery__photo--2" src="img/nursery-gallery-photo-2-mobile.jpg"
+                      srcset="img/nursery-gallery-photo-2-mobile@2x.jpg 2x" width="234" height="248" alt="Черный кот в темном помещении">
+                    </picture>
+                  </p>
+                  <p class="nursery-gallery__picture">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1366px)"
+                      srcset="img/nursery-gallery-photo-3-desktop.webp 1x, img/nursery-gallery-photo-3-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/nursery-gallery-photo-3-tablet.webp 1x, img/nursery-gallery-photo-3-tablet@2x.webp 2x">
+                      <source type="image/webp"
+                      srcset="img/nursery-gallery-photo-3-mobile.webp 1x, img/nursery-gallery-photo-3-mobile@2x.webp 2x">
+                      <source media="(min-width: 1366px)"
+                      srcset="img/nursery-gallery-photo-3-desktop.jpg 1x, img/nursery-gallery-photo-3-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)"
+                      srcset="img/nursery-gallery-photo-3-tablet.jpg 1x, img/nursery-gallery-photo-3-tablet@2x.jpg 2x">
+                      <img class="nursery-gallery__photo nursery-gallery__photo--3" src="img/nursery-gallery-photo-3-mobile.jpg"
+                      srcset="img/nursery-gallery-photo-3-mobile@2x.jpg 2x" width="234" height="248" alt="Большой кот лежит и доволен">
+                    </picture>
+                  </p>
                 </li>
               </ul>
               <div class="nursery__controls nursery-controls">
@@ -123,15 +129,15 @@
                 </button>
               </div>
             </div>
-            <a class="btn  btn--nursery" href="#">Смотреть больше</a>
+            <a class="btn  btn--nursery" href="#"><span data-hover="Смотреть больше">Смотреть больше</span></a>
           </div>
         </div>
       </section>
       <section class="pet-features  section">
         <div class="section__wrapper">
           <div class="pet-features__content">
-            <h2 class="section__title">Особенности породы</h2>
-            <p class="section__description  section__description--pet-features">Мейн-Кун - это порода, которая вызывает к&nbsp;себе уважение. Приобретая в свой дом этого питомца, вы получите умное&nbsp;животное, которому нет равных</p>
+            <h2 class="section__title  section__title--pet-features">Особенности породы</h2>
+            <p class="section__description  section__description--pet-features">Мейн-Кун - это порода, которая вызывает к&nbsp;себе уважение. Приобретая в свой дом этого питомца, вы получите умно животное, которому нет равных</p>
             <div class="pet-features__group">
               <picture>
                 <source type="image/webp" media="(min-width: 1366px)"
@@ -148,16 +154,16 @@
               </picture>
               <ul class="pet-features__list">
                 <li class="pet-features__item  pet-features__item--1">
-                  <p class="pet-features__text">Легко уживается в семьях с детьми или&nbsp;другими животными</p>
+                  <p class="pet-features__text">Легко уживается в семьях с&nbsp;детьми <nobr>или другими</nobr> животными</p>
                 </li>
                 <li class="pet-features__item  pet-features__item--2">
-                  <p class="pet-features__text">Выполняет команды как дрессированная собака</p>
+                  <p class="pet-features__text">Выполняет команды как <nobr>дрессированная собака</nobr></p>
                 </li>
                 <li class="pet-features__item  pet-features__item--3">
                   <p class="pet-features__text">Вес может достигать 12 кг, а длина 1 м</p>
                 </li>
                 <li class="pet-features__item  pet-features__item--4">
-                  <p class="pet-features__text">Внешний вид этой кошки похож на дикую рысь</p>
+                  <p class="pet-features__text">Внешний вид этой кошки <nobr>похож на дикую рысь</nobr></p>
                 </li>
               </ul>
             </div>
@@ -167,26 +173,32 @@
       <section class="our-advantages  section">
         <div class="section__wrapper">
           <div class="our-advantages__content">
-            <h2 class="section__title">Почему именно мы?</h2>
+            <h2 class="section__title  section__title--our-advantages">Почему именно&nbsp;мы?</h2>
             <p class="section__description  section__description--our-advantages">Приобретая животное в нашем питомнике, вы получите</p>
             <ul class="our-advantages__list">
               <li class="our-advantages__item  our-advantages__item--1  our-advantages__item--marked">
-                <svg class="our-advantages__icon  our-advantages__icon--1" width="80" height="88" aria-hidden="true" focusable="false">
-                  <use xlink:href="img/sprite.svg#icon-advantages-1"></use>
-                </svg>
+                <p class="our-advantages__picture">
+                  <svg class="our-advantages__icon  our-advantages__icon--1" width="80" height="88" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/sprite.svg#icon-advantages-1"></use>
+                  </svg>
+                </p>
                 <p class="our-advantages__text">Бесплатное ветеринарное обслуживание 5 лет</p>
               </li>
               <li class="our-advantages__item  our-advantages__item--2">
-                <svg class="our-advantages__icon  our-advantages__icon--2" width="80" height="71" aria-hidden="true" focusable="false">
-                  <use xlink:href="img/sprite.svg#icon-advantages-2"></use>
-                </svg>
+                <p class="our-advantages__picture">
+                  <svg class="our-advantages__icon  our-advantages__icon--2" width="80" height="71" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/sprite.svg#icon-advantages-2"></use>
+                  </svg>
+                </p>
                 <p class="our-advantages__text">Консультирование по любому вопросу 24 часа в сутки</p>
               </li>
               <li class="our-advantages__item  our-advantages__item--3">
-                <svg class="our-advantages__icon  our-advantages__icon--3" width="57" height="88" aria-hidden="true" focusable="false">
-                  <use xlink:href="img/sprite.svg#icon-advantages-3"></use>
-                </svg>
-                <p class="our-advantages__text">Индивидуальный подбор питания для вашего кота</p>
+                <p class="our-advantages__picture">
+                  <svg class="our-advantages__icon  our-advantages__icon--3" width="57" height="88" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/sprite.svg#icon-advantages-3"></use>
+                  </svg>
+                </p>
+                <p class="our-advantages__text">Индивидуальный подбор питания для&nbsp;вашего кота</p>
               </li>
             </ul>
           </div>
@@ -195,7 +207,7 @@
       <section class="pet-care  section">
         <div class="section__wrapper">
           <div class="pet-care__content">
-            <h2 class="section__title  section__title--pet-care">Об уходе за&nbsp;Мейн-Куном</h2>
+            <h2 class="section__title  section__title--pet-care">Об уходе за&nbsp;Мейн&#8209;Куном</h2>
             <div class="pet-care__info  pet-care-info">
               <div class="pet-care-info__item">
                 <h3 class="pet-care-info__title">Шерсть</h3>
@@ -252,27 +264,29 @@
       <section class="our-team  section">
         <div class="section__wrapper">
           <div class="our-team__content">
-            <h2 class="section__title">Наша команда</h2>
+            <h2 class="section__title  section__title--our-team">Наша команда</h2>
             <p class="section__description  section__description--our-team">Все сотрудники нашего питомника дипломированые специалисты в&nbsp;области&nbsp;фелинологии и ветеринарии</p>
             <div class="our-team__group">
               <div class="our-team__list">
                 <div class="our-team__item  person">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1366px)"
-                    srcset="img/person-photo-desktop.webp 1x, img/person-photo-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/person-photo-tablet.webp 1x, img/person-photo-tablet@2x.webp 2x">
-                    <source type="image/webp"
-                    srcset="img/person-photo-mobile.webp 1x, img/person-photo-mobile@2x.webp 2x">
-                    <source media="(min-width: 1366px)"
-                    srcset="img/person-photo-desktop.jpg 1x, img/person-photo-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)"
-                    srcset="img/person-photo-tablet.jpg 1x, img/person-photo-tablet@2x.jpg 2x">
-                    <img class="person__photo" src="img/person-photo-mobile.jpg" srcset="img/person-photo-mobile@2x.jpg 2x"
-                    width="126" height="126" alt="">
-                  </picture>
+                  <p class="person__picture">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1366px)"
+                      srcset="img/person-photo-desktop.webp 1x, img/person-photo-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/person-photo-tablet.webp 1x, img/person-photo-tablet@2x.webp 2x">
+                      <source type="image/webp"
+                      srcset="img/person-photo-mobile.webp 1x, img/person-photo-mobile@2x.webp 2x">
+                      <source media="(min-width: 1366px)"
+                      srcset="img/person-photo-desktop.jpg 1x, img/person-photo-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)"
+                      srcset="img/person-photo-tablet.jpg 1x, img/person-photo-tablet@2x.jpg 2x">
+                      <img class="person__photo" src="img/person-photo-mobile.jpg" srcset="img/person-photo-mobile@2x.jpg 2x"
+                      width="126" height="126" alt="">
+                    </picture>
+                  </p>
                   <blockquote class="person__info">
-                    <cite class="person__name">Серёжа Попов</cite>
+                    <cite class="person__name">Сережа Попов</cite>
                     <p class="person__description">Основатель питомника</p>
                     <p class="person__quote">Наш питомник занимается разведением Мейн-Кунов на протяжениие 15 лет. Мы&nbsp;в ответе за каждого приобретенного вами питомца</p>
                   </blockquote>
@@ -314,10 +328,10 @@
       <section class="faq section">
         <div class="section__wrapper">
           <div class="faq__content">
-            <h2 class="section__title">Вопрос-Ответ</h2>
+            <h2 class="section__title  section__title--faq">Вопрос-Ответ</h2>
             <p class="section__description  section__description--faq">Мы ответим на самые популярные&nbsp;ваши&nbsp;вопросы</p>
             <div class="faq__list">
-              <div class="faq__item faq__item--open" data-count="01">
+              <div class="faq__item faq__item--open">
                 <button class="faq__title" type="button">
                   С какого возраста можно забирать котенка из питомника?
                   <span class="faq__button">
@@ -331,7 +345,7 @@
                   <p class="faq__text">Так что, чтобы в дома появился психически и физически здоровый котенок, игривый, жизнерадостный, самостоятельный и воспитанный, не спешите забирать его от кошки-мамы раньше трех месяцев.</p>
                 </div>
               </div>
-              <div class="faq__item" data-count="02">
+              <div class="faq__item">
                 <button class="faq__title" type="button">
                   Как зарезервировать котенка?
                   <span class="faq__button">
@@ -346,7 +360,7 @@
                   <p class="faq__text">Так что, чтобы в дома появился психически и физически здоровый котенок, игривый, жизнерадостный, самостоятельный и воспитанный, не спешите забирать его от кошки-мамы раньше трех месяцев.</p>
                 </div>
               </div>
-              <div class="faq__item" data-count="03">
+              <div class="faq__item">
                 <button class="faq__title" type="button">
                   Можно ли купить кота, если&nbsp;я&nbsp;живу в другом городе?
                   <span class="faq__button">
@@ -361,7 +375,7 @@
                   <p class="faq__text">Так что, чтобы в дома появился психически и физически здоровый котенок, игривый, жизнерадостный, самостоятельный и воспитанный, не спешите забирать его от кошки-мамы раньше трех месяцев.</p>
                 </div>
               </div>
-              <div class="faq__item" data-count="04">
+              <div class="faq__item">
                 <button class="faq__title" type="button">
                   Как подготовить дом к&nbsp;приему&nbsp;нового питомца?
                   <span class="faq__button">
@@ -473,5 +487,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>

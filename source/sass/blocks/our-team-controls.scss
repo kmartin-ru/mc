@@ -1,22 +1,29 @@
 .our-team-controls {
   position: absolute;
-  top: 42px;
+  top: 43px;
   left: 50%;
   transform: translateX(-50%);
 
   display: flex;
   justify-content: space-between;
-  width: 204px;
+  width: 206px;
 
   @media (min-width: $tablet-width) {
     top: auto;
-    right: 0;
-    bottom: -102px;
+    right: 33px;
+    bottom: -97px;
     left: auto;
 
-    width: 317px;
+    width: 319px;
 
     transform: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 172px;
+    bottom: auto;
+
+    width: 100%;
   }
 }
 
@@ -29,9 +36,45 @@
   margin: 0;
   padding: 0;
 
-  background: none;
-  border: none;
+  background: transparent;
+  border: 1px solid transparent;
   cursor: pointer;
+
+  transition: border-color 0.3s;
+
+  @media (min-width: $tablet-width) {
+    width: 56px;
+    height: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $color-primary;
+  }
+
+  &:active {
+    border-color: $color-primary-30;
+  }
+
+  &:active .our-team-controls__icon {
+    stroke: $color-primary-30;
+  }
+}
+
+.our-team-controls__button--prev {
+  @media (min-width: $desktop-width) {
+    left: -35px;
+  }
+}
+
+.our-team-controls__button--next {
+  @media (min-width: $desktop-width) {
+    right: -35px;
+  }
 }
 
 .our-team-controls__icon {
@@ -39,13 +82,13 @@
   height: 20px;
 
   fill: none;
-  stroke: $text-primary;
+  stroke: $color-primary;
   stroke-width: 1;
 
-  @media (min-width: $tablet-width) {
-    width: 13px;
-    height: 30px;
+  transition: stroke 0.3s;
 
-    stroke-width: 2;
+  @media (min-width: $tablet-width) {
+    width: 16px;
+    height: 32px;
   }
 }

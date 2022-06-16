@@ -1,27 +1,60 @@
+.pet-care-info {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(165px, auto);
+    column-gap: 42px;
+    row-gap: 43px;
+  }
+}
+
 .pet-care-info__item {
   position: relative;
 
   margin-bottom: 30px;
   padding: 21px 51px 18px 25px;
 
-  background: $black-30;
-  border: 1px solid $text-primary;
+  background-color: $black-30;
+  border: 1px solid $color-primary;
+
+  transition: background-color 0.3s, border-color 0.3s;
+
+  &:hover,
+  &:focus,
+  &:focus-within {
+    border-color: $color-primary-70;
+    background-color: $black-70;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 
     width: 558px;
     min-height: 168px;
     margin: 0 auto;
     margin-bottom: 23px;
-    padding: 25px 120px 25px 49px;
+    padding: 39px 120px 24px 49px;
   }
-}
 
-.pet-care-info__item:last-child {
-  margin-bottom: 0;
+  @media (min-width: $desktop-width) {
+    width: auto;
+    min-height: auto;
+    margin: 0;
+    padding: 37px 105px 19px 59px;
+
+    background-color: transparent;
+
+    &:hover,
+    &:focus,
+    &:focus-within {
+      background-color: $black-30;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .pet-care-info__title {
@@ -31,7 +64,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
-  color: $text-primary;
+  color: $color-primary;
 
   @media (min-width: $tablet-width) {
     font-size: 22px;
@@ -54,19 +87,32 @@
 
 .pet-care-info__link {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
 
   display: flex;
   justify-content: center;
   align-items: center;
   width: 45px;
-  height: 100%;
 
   color: $white;
   text-decoration: none;
 
-  background: $text-primary;
+  background-color: $color-primary;
+
+  transition: background-color 0.3s;
+
+  &:hover,
+  &:focus {
+    background-color: $color-primary-70;
+  }
+
+  &:active {
+    .pet-care-info__icon {
+      stroke: $white-30;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     width: 60px;
@@ -79,6 +125,9 @@
 
   fill: none;
   stroke: $white;
+  stroke-width: 1;
+
+  transition: stroke 0.3s;
 
   @media (min-width: $tablet-width) {
     width: 12px;

@@ -1,10 +1,10 @@
 .logo {
   width: 50px;
-  height: 22px;
+  height: 23px;
 
-  fill: $text-primary;
-  stroke: $section-bg-2;
-  stroke-width: 0.8;
+  fill: $color-primary;
+  stroke: $background-dark-2;
+  stroke-width: 0.5;
 
   @media (min-width: $tablet-width) {
     width: 55px;

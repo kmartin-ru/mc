@@ -1,10 +1,67 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
   min-height: 617px;
+  padding-bottom: 272px;
 
-  background-color: $section-bg;
+  background-color: $background-dark;
+  background-image: url("../img/about-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 336px 256px;
+  background-position: calc(50% + 36px) 100%;
+
+  @supports (background-image: image-set("../img/about-mobile.webp" 1x)) {
+    background-image: image-set("../img/about-mobile.webp" 1x);
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/about-mobile@2x.png");
+
+    @supports (background-image: image-set("../img/about-mobile@2x.webp" 2x)) {
+      background-image: image-set("../img/about-mobile@2x.webp" 2x);
+    }
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 595px;
+    padding-bottom: 116px;
+
+    background-image: url("../img/about-tablet.png");
+    background-size: 654px 497px;
+    background-position: calc(50% + 283px) 100%;
+
+    @supports (background-image: image-set("../img/about-tablet.webp" 1x)) {
+      background-image: image-set("../img/about-tablet.webp" 1x);
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/about-tablet@2x.png");
+
+      @supports (background-image: image-set("../img/about-tablet@2x.webp" 2x)) {
+        background-image: image-set("../img/about-tablet@2x.webp" 2x);
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 684px;
+    padding-bottom: 172px;
+
+    background-image: url("../img/about-desktop.png");
+    background-size: 874px 665px;
+    background-position: calc(50% + 409px) 100%;
+
+    @supports (background-image: image-set("../img/about-desktop.webp" 1x)) {
+      background-image: image-set("../img/about-desktop.webp" 1x);
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/about-desktop@2x.png");
+
+      @supports (background-image: image-set("../img/about-desktop@2x.webp" 2x)) {
+        background-image: image-set("../img/about-desktop@2x.webp" 2x);
+      }
+    }
   }
 }
 
@@ -13,12 +70,27 @@
   justify-content: center;
   padding-top: 27px;
   margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 29px;
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 46px;
+    margin-bottom: 56px;
+  }
 }
 
 .page-header__bottom {
   padding-top: 25px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 66px;
+    padding-top: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 57px;
+    padding-left: 100px;
   }
 }

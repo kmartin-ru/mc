@@ -5,6 +5,25 @@
     display: flex;
     margin-left: -5px;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    margin-left: 0;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -102px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      height: 77px;
+      width: 1px;
+
+      background-color: $white-60;
+    }
+  }
 }
 
 .about-socials__link {
@@ -16,6 +35,20 @@
 
   color: $white;
   text-decoration: none;
+
+  border: 1px solid transparent;
+
+  transition: border-color 0.3s;
+
+  &:hover,
+  &:focus {
+    border-color: $white;
+  }
+
+  &:active {
+    color: $white-30;
+    border-color: $white-30;
+  }
 }
 
 .about-socials__icon--vk {

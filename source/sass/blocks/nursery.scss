@@ -1,21 +1,45 @@
 .nursery {
   padding-top: 53px;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
 
-  background-color: $section-bg-2;
+  background-color: $background-dark-2;
 
   @media (min-width: $tablet-width) {
     padding-top: 100px;
     padding-bottom: 45px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 223px;
+    padding-bottom: 42px;
+  }
+}
+
+.nursery__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .nursery__group {
   position: relative;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   margin-bottom: 45px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 55px;
+  }
+}
+
+.nursery__controls {
+  position: absolute;
+  top: 168px;
+
+  @media (min-width: $tablet-width) {
+    top: 280px;
   }
 }

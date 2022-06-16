@@ -2,10 +2,59 @@
   padding-top: 53px;
   padding-bottom: 57px;
 
-  background-color: $section-bg-2;
+  background-color: $background-special;
+  background-image: url("../img/pet-care-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+
+  @supports (background-image: image-set("../img/pet-care-mobile.webp" 1x)) {
+    background-image: image-set("../img/pet-care-mobile.webp" 1x);
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/pet-care-mobile@2x.jpg");
+
+    @supports (background-image: image-set("../img/pet-care-mobile@2x.webp" 2x)) {
+      background-image: image-set("../img/pet-care-mobile@2x.webp" 2x);
+    }
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 90px;
-    padding-bottom: 102px;
+    padding-bottom: 99px;
+
+    background-image: url("../img/pet-care-tablet.jpg");
+
+    @supports (background-image: image-set("../img/pet-care-tablet.webp" 1x)) {
+      background-image: image-set("../img/pet-care-tablet.webp" 1x);
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/pet-care-tablet@2x.jpg");
+
+      @supports (background-image: image-set("../img/pet-care-tablet@2x.webp" 2x)) {
+        background-image: image-set("../img/pet-care-tablet@2x.webp" 2x);
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 84px;
+    padding-bottom: 99px;
+
+    background-image: url("../img/pet-care-desktop.jpg");
+
+    @supports (background-image: image-set("../img/pet-care-desktop.webp" 1x)) {
+      background-image: image-set("../img/pet-care-desktop.webp" 1x);
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/pet-care-desktop@2x.jpg");
+
+      @supports (background-image: image-set("../img/pet-care-desktop@2x.webp" 2x)) {
+        background-image: image-set("../img/pet-care-desktop@2x.webp" 2x);
+      }
+    }
   }
 }

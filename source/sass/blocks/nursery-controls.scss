@@ -1,14 +1,7 @@
 .nursery-controls {
-  position: absolute;
-  top: 160px;
-
   display: flex;
   justify-content: space-between;
   width: 100%;
-
-  @media (min-width: $tablet-width) {
-    top: 291px;
-  }
 
   @media (min-width: $desktop-width) {
     display: none;
@@ -21,21 +14,41 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40px;
-  width: 40px;
+  height: 43px;
+  width: 43px;
   margin: 0;
   padding: 0;
 
-  background: none;
-  border: none;
+  background: transparent;
+  border: 1px solid transparent;
   cursor: pointer;
+
+  transition: border-color 0.3s;
+
+  &:hover,
+  &:focus {
+    border-color: $color-primary;
+  }
+
+  &:active {
+    border-color: $color-primary-30;
+  }
+
+  &:active .nursery-controls__icon {
+    stroke: $color-primary-30;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 84px;
+    width: 84px;
+  }
 }
 
 .nursery-controls__button--prev {
   left: -15px;
 
   @media (min-width: $tablet-width) {
-    left: -25px;
+    left: -40px;
   }
 }
 
@@ -43,7 +56,7 @@
   right: -15px;
 
   @media (min-width: $tablet-width) {
-    right: -25px;
+    right: -40px;
   }
 }
 
@@ -52,13 +65,13 @@
   height: 20px;
 
   fill: none;
-  stroke: $text-primary;
+  stroke: $color-primary;
   stroke-width: 1;
+
+  transition: stroke 0.3s;
 
   @media (min-width: $tablet-width) {
     width: 16px;
     height: 32px;
-
-    stroke-width: 1;
   }
 }

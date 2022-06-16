@@ -1,4 +1,4 @@
-.person__socials {
+.person-socials {
   display: flex;
 
   @media (min-width: $tablet-width) {
@@ -19,18 +19,32 @@
   color: $white;
   text-decoration: none;
 
+  border: 1px solid transparent;
+
+  transition: border-color 0.3s;
+
+  &:hover,
+  &:focus {
+    border-color: $white;
+  }
+
+  &:active {
+    color: $white-30;
+    border-color: $white-30;
+  }
+
   @media (min-width: $tablet-width) {
     margin-right: 2px;
   }
-}
 
-.person-socials__link:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .person-socials__icon--fb {
-  width: 6px;
-  height: 12px;
+  width: 7px;
+  height: 14px;
 
   @media (min-width: $tablet-width) {
     width: 8px;
@@ -39,21 +53,21 @@
 }
 
 .person-socials__icon--tw {
-  width: 16px;
-  height: 11px;
+  width: 17px;
+  height: 13px;
 
   @media (min-width: $tablet-width) {
     width: 20px;
-    height: 14px;
+    height: 16px;
   }
 }
 
 .person-socials__icon--vk {
-  width: 13px;
-  height: 9px;
+  width: 19px;
+  height: 11px;
 
   @media (min-width: $tablet-width) {
-    width: 21px;
-    height: 12px;
+    width: 22px;
+    height: 14px;
   }
 }

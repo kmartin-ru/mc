@@ -5,25 +5,49 @@
 
   @media (min-width: $tablet-width) {
     align-items: flex-start;
-    padding: 92px 95px 76px 129px;
+    padding: 73px 95px 67px 108px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 68px 102px 64px 99px;
+  }
+}
+
+.person__picture {
+  position: relative;
+  height: 126px;
+  margin: 0;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    right: 90px;
+    bottom: -97px;
+
+    height: 207px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -1px;
+    right: auto;
+    bottom: auto;
+    left: 120px;
+
+    height: 360px;
   }
 }
 
 .person__photo {
+  display: block;
   width: 126px;
   height: 126px;
-  margin-bottom: 18px;
 
   object-fit: cover;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    right: 55px;
-    bottom: -96px;
-
     width: 207px;
     height: 207px;
-    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {

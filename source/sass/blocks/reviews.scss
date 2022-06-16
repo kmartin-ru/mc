@@ -8,6 +8,11 @@
     padding-top: 41px;
     padding-bottom: 87px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 45px;
+    padding-bottom: 87px;
+  }
 }
 
 .reviews__group {

@@ -1,18 +1,34 @@
 // colors
 
 $section-bg: #181617;
+$background-dark: #181617;
+
 $section-bg-2: #1f1c1d;
+$background-dark-2: #1f1c1d;
+
 $section-bg-3: #151313;
+$background-dark-3: #151313;
+
 $text-primary: #a07b50;
+$color-primary: #a07b50;
+$color-primary-70: rgba($color-primary, 70%);
+$color-primary-50: rgba($color-primary, 50%);
+$color-primary-30: rgba($color-primary, 30%);
+
 $text-secondary: #ddd0c3;
 $text-3: #d6ccc2;
 $text-4: #fdf2e6;
 $border: #544332;
 $white: #ffffff;
 $white-70: rgba($white, 70%);
+$white-60: rgba($white, 60%);
 $white-30: rgba($white, 30%);
 $white-20: rgba($white, 20%);
-$black-30: #00000030;
+$black: #000000;
+$black-70: rgba($black, 70%);
+$black-30: rgba($black, 30%);
+
+$background-special: #1a1a1a;
 
 // viewports
 

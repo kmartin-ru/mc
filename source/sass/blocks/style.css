@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.tools {
+  padding: 50px;
+  background-color: #24305e;
+}
+
+.tools__wrapper {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.tools-card {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  flex-shrink: 0;
+  padding: 24px 0;
+  overflow: hidden;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+
+  background-color: #374785;
+  border-radius: 10px;
+
+  justify-self: center;
+}
+
+.tools-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: #a8d0e6;
+  transform: translateY(-60%) skewY(-10deg);
+}
+
+.tools-card::after {
+  content: attr(data-brand);
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  z-index: -1;
+
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 100%;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+
+  transform: translate(-50%, -50%);
+}
+
+.tools-card__img {
+  margin-bottom: 20px;
+}
+
+.tools-card__content {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.tools-card__title {
+  margin: 0 0 20px 0;
+
+  font-weight: 500;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+/* Кнопка карточки */
+.tools-card__buy-btn {
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 8px 24px;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  font-family: inherit;
+  color: #ffffff;
+
+  background-color: #f76c6c;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tools-card__buy-btn:hover,
+.tools-card__buy-btn:focus {
+  color: #f76c6c;
+  background-color: #f8e9a1;
+}
+
+.tools-card--hover-1 {
+ transition: box-shadow 0.3s ease;
+}
+
+.tools-card--hover-1:hover {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.tools-card--hover-2 {
+  transition: background-color 1s ease;
+}
+
+.tools-card--hover-2:hover {
+  background-color: #1c2757;
+  transition: background-color 0.3s ease;
+}
+
+.tools-card--hover-3:hover {
+  background-color: #1c2757;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}

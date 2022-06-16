@@ -1,40 +1,68 @@
 .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 141px;
-  height: 40px;
-  margin: 0 auto;
+  display: inline-block;
+  overflow: hidden;
 
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
-  color: $white;
   text-decoration: none;
 
-  border: 1px solid $text-primary;
+  span {
+    position: relative;
 
-  &:hover,
-  &:focus {
-    background-color: $text-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 141px;
+    height: 40px;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: $white;
+
+    border: 1px solid $color-primary;
+
+    transition: transform 0.3s, color 0.3s;
+
+    &::before {
+      content: attr(data-hover);
+
+      position: absolute;
+      top: 100%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+
+      background-color: $color-primary;
+      border: 1px solid $color-primary;
+    }
   }
 
-  &:active {
+  &:hover span,
+  &:focus span {
+    transform: translateY(-100%);
+  }
+
+  &:active span {
     color: $white-30;
   }
 
   @media (min-width: $tablet-width) {
-    width: 200px;
-    height: 53px;
-
-    font-size: 14px;
-    line-height: 16px;
-  }
-}
-
-.btn--about {
-  @media (min-width: $tablet-width) {
     margin: 0;
-    margin-bottom: 54px;
+
+    span {
+      width: 200px;
+      height: 53px;
+
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    span {
+      height: 52px;
+    }
   }
 }
