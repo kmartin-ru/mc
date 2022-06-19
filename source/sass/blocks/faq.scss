@@ -2,10 +2,10 @@
   padding-top: 54px;
   padding-bottom: 30px;
 
-  background-color: $section-bg-2;
+  background-color: $color-dark-2;
 
   @media (min-width: $tablet-width) {
-    padding-top: 138px;
+    padding-top: 137px;
     padding-bottom: 42px;
   }
 
@@ -35,7 +35,7 @@
   @media (min-width: $tablet-width) {
     position: relative;
 
-    margin-bottom: 25px;
+    margin-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -45,8 +45,8 @@
   &::before {
     @media (min-width: $tablet-width) {
       counter-increment: section;
-      // content: attr(data-count);
       content: "0" counter(section);
+      // content: attr(data-count);
 
       position: absolute;
       top: 9px;
@@ -56,7 +56,9 @@
       font-weight: 700;
       font-size: 50px;
       line-height: 59px;
-      color: $color-primary;
+      color: $color-light;
+
+      text-align: center;
     }
 
     @media (min-width: $desktop-width) {
@@ -76,27 +78,42 @@
 .faq__title {
   position: relative;
 
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
   width: 100%;
   margin: 0;
-  padding: 9px 53px 9px 15px;
+  padding: 9px 52px 9px 15px;
 
   font: inherit;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
-  color: $text-secondary;
+  color: $color-light-2;
   text-align: left;
 
   background: none;
-  border: 1px solid $border;
+  border: 1px solid $color-light-5;
   cursor: pointer;
 
+  transition: border-color 0.3s;
+
+  &:hover,
+  &:focus,
+  &:hover .faq__button,
+  &:focus .faq__button {
+    border-color: $color-light;
+  }
+
+  &:active,
+  &:active .faq__button {
+    border-color: $color-light-30;
+  }
+
+  &:active .faq__icon {
+    fill: $color-light-30;
+  }
+
   @media (min-width: $tablet-width) {
-    min-height: 76px;
-    padding: 20px 129px 18px 29px;
+    min-height: 77px;
+    padding: 20px 125px 18px 29px;
 
     font-size: 16px;
     line-height: 19px;
@@ -104,23 +121,34 @@
 
   @media (min-width: $desktop-width) {
     min-height: 110px;
-    padding: 48px 42px 42px;
+    padding: 48px 200px 42px 42px;
+  }
+}
+
+.faq__item--open .faq__title {
+  &:active .faq__button {
+    background-color: $color-light-70;
+  }
+
+  &:active .faq__icon {
+    fill: $white-30;
   }
 }
 
 .faq__button {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
 
   display: flex;
   justify-content: center;
   align-items: center;
   width: 43px;
 
-  background: none;
-  border-left: 1px solid $border;
+  border-left: 1px solid $color-light-5;
+
+  transition: background-color 0.3s, border-color 0.3s;
 
   @media (min-width: $tablet-width) {
     width: 72px;
@@ -132,26 +160,37 @@
 }
 
 .faq__item--open .faq__button {
-  background: $text-primary;
+  background-color: $color-light;
+  border-left-color: $color-light;
 }
 
 .faq__icon {
+  fill: $color-light;
+
+  transition: fill 0.3s;
+}
+
+.faq__item--open .faq__icon {
   fill: $white;
+}
+
+.faq__item--open .vr {
+  display: none;
 }
 
 .faq__description {
   display: none;
   padding: 10px 25px 10px 15px;
 
-  border: 0.5px solid #544332;
+  border: 1px solid $color-light-5;
   border-top: none;
 
   @media (min-width: $tablet-width) {
-    padding: 26px 142px 24px 29px;
+    padding: 25px 142px 24px 29px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 36px 200px 42px 42px;
+    padding: 36px 200px 39px 42px;
   }
 }
 
@@ -166,7 +205,7 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 20px;
-  color: $text-secondary;
+  color: $color-light-2;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
@@ -174,8 +213,12 @@
     font-size: 16px;
     line-height: 25px;
   }
-}
 
-.faq__text:last-child {
-  margin-bottom: 0;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 24px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }

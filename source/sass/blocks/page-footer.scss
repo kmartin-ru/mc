@@ -1,11 +1,17 @@
 .page-footer {
   padding-top: 35px;
-  padding-bottom: 41px;
+  padding-bottom: 40px;
 
-  background-color: $section-bg-3;
+  background-color: $color-dark-3;
 
   @media (min-width: $tablet-width) {
-    padding-top: 31px;
+    padding-top: 34px;
+    padding-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 72px;
+    padding-bottom: 53px;
   }
 }
 
@@ -15,9 +21,18 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
+    display: grid;
+    align-items: flex-start;
+    padding-right: 7px;
+
+    grid-template-columns: 210px 1fr 140px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 170px;
+    padding-left: 140px;
+
+    grid-template-columns: 160px 235px 1fr 140px;
   }
 }
 
@@ -28,25 +43,57 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: $text-3;
+  color: $color-light-3;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 0;
+    padding-right: 20px;
 
-    line-height: 27px;
+    color: $color-light-4-80;
+
+    grid-column: 2 / 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3 / 4;
   }
 }
 
 .page-footer__phone {
   display: block;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: $text-4;
+  color: $color-light-4;
   text-decoration: none;
 
+  transition: color 0.3s;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline wavy;
+  }
+
+  &:active {
+    color: $color-light-4-30;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-weight: 700;
+    text-align: right;
+
+    grid-column: 3 / 4;
+    justify-self: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 4 / 5;
+  }
+}
+
+.page-footer__address,
+.page-footer__phone {
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
 

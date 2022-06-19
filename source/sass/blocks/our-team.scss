@@ -2,13 +2,13 @@
   padding-top: 54px;
   padding-bottom: 60px;
 
-  background-color: $background-dark;
+  background-color: $color-dark;
 
   @media (min-width: $tablet-width) {
     padding-top: 84px;
-    padding-bottom: 193px;
+    padding-bottom: 195px;
 
-    background-color: $background-dark-3;
+    background-color: $color-dark-3;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,54 +19,26 @@
 
 .our-team__group {
   position: relative;
-}
 
-.our-team__list {
-  position: relative;
-  padding-bottom: 9px;
-
-  background: $background-dark-2;
+  min-height: 338px;
 
   @media (min-width: $tablet-width) {
-    position: static;
-
     min-height: 410px;
-    margin-right: 33px;
-    margin-left: 7px;
-    padding-bottom: 0;
-
-    background-color: $background-dark-2;
-    border-style: solid;
-    border-width: 23px;
-    border-color: $background-dark-3;
-    outline: 1px solid $color-primary-50;
-    outline-offset: -1px;
   }
 
   @media (min-width: $desktop-width) {
-    position: static;
-
     min-height: 402px;
-    margin-right: 66px;
-    margin-left: 434px;
+  }
+}
 
-    border-width: 23px 34px 23px 26px;
+.our-team__list {
+  @media (min-width: $tablet-width) {
+    margin-right: 33px;
+    margin-left: 7px;
   }
 
-  &::before {
-    content: "";
-
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-
-    height: 63px;
-
-    background: $background-dark;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
+  @media (min-width: $desktop-width) {
+    margin-right: 66px;
+    margin-left: 434px;
   }
 }

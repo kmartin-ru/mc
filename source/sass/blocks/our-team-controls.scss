@@ -1,4 +1,6 @@
 .our-team-controls {
+  z-index: 3;
+
   position: absolute;
   top: 43px;
   left: 50%;
@@ -11,7 +13,7 @@
   @media (min-width: $tablet-width) {
     top: auto;
     right: 33px;
-    bottom: -97px;
+    bottom: -99px;
     left: auto;
 
     width: 319px;
@@ -53,27 +55,27 @@
 
   &:hover,
   &:focus {
-    border-color: $color-primary;
+    border-color: $color-light;
   }
 
   &:active {
-    border-color: $color-primary-30;
+    border-color: $color-light-30;
   }
 
   &:active .our-team-controls__icon {
-    stroke: $color-primary-30;
+    stroke: $color-light-30;
   }
 }
 
 .our-team-controls__button--prev {
   @media (min-width: $desktop-width) {
-    left: -35px;
+    left: 0;
   }
 }
 
 .our-team-controls__button--next {
   @media (min-width: $desktop-width) {
-    right: -35px;
+    right: -66px;
   }
 }
 
@@ -82,7 +84,7 @@
   height: 20px;
 
   fill: none;
-  stroke: $color-primary;
+  stroke: $color-light;
   stroke-width: 1;
 
   transition: stroke 0.3s;

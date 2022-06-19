@@ -1,17 +1,18 @@
 .reviews-controls {
   position: absolute;
   top: 64px;
-  left: 50%;
-  transform: translateX(-50%);
+  z-index: 3;
 
   display: flex;
   justify-content: space-between;
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    top: 127px;
+    top: 118px;
+    left: 50%;
+    transform: translateX(-50%);
 
-    width: 452px;
+    width: 532px;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,13 +31,39 @@
   margin: 0;
   padding: 0;
 
-  background: none;
-  border: none;
+  background: transparent;
+  border: 1px solid transparent;
   cursor: pointer;
 
+  transition: border-color 0.3s;
+
+  &:hover,
+  &:focus {
+    border-color: $color-light;
+  }
+
+  &:active {
+    border-color: $color-light-30;
+  }
+
+  &:active .reviews-controls__icon {
+    stroke: $color-light-30;
+  }
+
   @media (min-width: $tablet-width) {
-    width: 60px;
-    height: 30px;
+    position: static;
+
+    width: 115px;
+    height: 48px;
+
+    &:hover .reviews-controls__icon,
+    &:focus .reviews-controls__icon {
+      stroke: $color-light;
+    }
+
+    &:active .reviews-controls__icon {
+      stroke: $color-light-30;
+    }
   }
 }
 
@@ -53,14 +80,16 @@
   height: 20px;
 
   fill: none;
-  stroke: $text-primary;
+  stroke: $color-light;
   stroke-width: 1;
+
+  transition: stroke 0.3s;
 
   @media (min-width: $tablet-width) {
     width: 60px;
     height: 18px;
 
-    stroke-width: 0.5;
+    stroke: $color-light-50;
   }
 }
 

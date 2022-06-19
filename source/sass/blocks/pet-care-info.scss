@@ -1,4 +1,8 @@
 .pet-care-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -15,30 +19,27 @@
   padding: 21px 51px 18px 25px;
 
   background-color: $black-30;
-  border: 1px solid $color-primary;
+  border: 1px solid $color-light-50;
 
   transition: background-color 0.3s, border-color 0.3s;
 
   &:hover,
   &:focus,
   &:focus-within {
-    border-color: $color-primary-70;
+    border-color: $color-light-70;
     background-color: $black-70;
   }
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
-
     width: 558px;
     min-height: 168px;
-    margin: 0 auto;
     margin-bottom: 23px;
-    padding: 39px 120px 24px 49px;
+    padding: 39px 110px 24px 49px;
   }
 
   @media (min-width: $desktop-width) {
     width: auto;
+    height: 100%;
     min-height: auto;
     margin: 0;
     padding: 37px 105px 19px 59px;
@@ -64,7 +65,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
-  color: $color-primary;
+  color: $color-light;
 
   @media (min-width: $tablet-width) {
     font-size: 22px;
@@ -99,13 +100,13 @@
   color: $white;
   text-decoration: none;
 
-  background-color: $color-primary;
+  background-color: $color-light;
 
   transition: background-color 0.3s;
 
   &:hover,
   &:focus {
-    background-color: $color-primary-70;
+    background-color: $color-light-70;
   }
 
   &:active {

@@ -2,38 +2,40 @@
   padding-top: 25px;
   padding-bottom: 60px;
 
-  background-color: $section-bg-2;
+  background-color: $color-dark-2;
 
   @media (min-width: $tablet-width) {
-    padding-top: 41px;
-    padding-bottom: 87px;
+    padding-top: 42px;
+    padding-bottom: 88px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 45px;
-    padding-bottom: 87px;
+    padding-bottom: 110px;
   }
 }
 
 .reviews__group {
   position: relative;
-}
 
-.reviews__group::before {
-  content: "";
-
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  height: 357px;
-
-  background: $section-bg;
+  min-height: 440px;
 
   @media (min-width: $tablet-width) {
-    right: 60px;
-    left: 60px;
-    height: 368px;
+    min-height: 463px;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 408px;
+  }
+}
+
+.reviews__list {
+  @media (min-width: $tablet-width) {
+    padding: 0 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 477px;
+    padding-right: 43px;
   }
 }

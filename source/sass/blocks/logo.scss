@@ -2,8 +2,8 @@
   width: 50px;
   height: 23px;
 
-  fill: $color-primary;
-  stroke: $background-dark-2;
+  fill: $color-light;
+  stroke: $color-dark-2;
   stroke-width: 0.5;
 
   @media (min-width: $tablet-width) {
@@ -13,9 +13,11 @@
 }
 
 .logo--page-footer {
-  width: 55px;
-  height: 25px;
   order: 2;
+  width: 56px;
+  height: 25px;
+
+  stroke: $color-dark-3;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -23,7 +25,10 @@
 
   @media (min-width: $desktop-width) {
     display: block;
-    width: 50px;
-    height: 22px;
+    order: 0;
+    width: 47px;
+    height: 21px;
+
+    grid-column: 1 / 2;
   }
 }

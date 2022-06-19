@@ -1,10 +1,14 @@
 .person-socials {
+  z-index: 2;
+
   display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px;
 
   @media (min-width: $tablet-width) {
-    position: relative;
+    padding: 0;
 
-    margin-left: -8px;
+    transform: translateX(-8px);
   }
 }
 
@@ -30,6 +34,7 @@
 
   &:active {
     color: $white-30;
+
     border-color: $white-30;
   }
 
@@ -44,30 +49,30 @@
 
 .person-socials__icon--fb {
   width: 7px;
-  height: 14px;
+  height: 13px;
 
   @media (min-width: $tablet-width) {
     width: 8px;
-    height: 16px;
+    height: 14px;
   }
 }
 
 .person-socials__icon--tw {
   width: 17px;
-  height: 13px;
+  height: 12px;
 
   @media (min-width: $tablet-width) {
-    width: 20px;
-    height: 16px;
+    width: 19px;
+    height: 14px;
   }
 }
 
 .person-socials__icon--vk {
-  width: 19px;
-  height: 11px;
+  width: 16px;
+  height: 12px;
 
   @media (min-width: $tablet-width) {
-    width: 22px;
+    width: 18px;
     height: 14px;
   }
 }

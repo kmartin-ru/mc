@@ -2,28 +2,60 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 9px;
+
+  background: $color-dark-2;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    height: 63px;
+
+    background: $color-dark;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     align-items: flex-start;
-    padding: 73px 95px 67px 108px;
+    min-height: 410px;
+    padding: 73px 95px 68px 108px;
+
+    background-color: $color-dark-2;
+    border: 23px solid $color-dark-3;
+    outline: 1px solid $color-light-50;
+    outline-offset: -1px;
   }
 
   @media (min-width: $desktop-width) {
+    min-height: 402px;
     padding: 68px 102px 64px 99px;
+
+    border-width: 23px 34px 23px 26px;
   }
 }
 
 .person__picture {
-  position: relative;
+  z-index: 2;
+
+  width: 126px;
   height: 126px;
   margin: 0;
   margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    right: 90px;
+    right: 89px;
     bottom: -97px;
 
+    width: 207px;
     height: 207px;
     margin-bottom: 0;
   }
@@ -34,29 +66,22 @@
     bottom: auto;
     left: 120px;
 
+    width: 360px;
     height: 360px;
   }
 }
 
 .person__photo {
   display: block;
-  width: 126px;
-  height: 126px;
+  width: 100%;
+  height: auto;
 
   object-fit: cover;
-
-  @media (min-width: $tablet-width) {
-    width: 207px;
-    height: 207px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 360px;
-    height: 360px;
-  }
 }
 
 .person__info {
+  z-index: 2;
+
   margin: 0;
   margin-bottom: 18px;
   padding: 0 10px;
@@ -64,8 +89,6 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    position: relative;
-
     margin-bottom: 43px;
     padding: 0;
 
@@ -81,7 +104,7 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
-  color: $text-primary;
+  color: $color-light;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 7px;
@@ -98,7 +121,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
-  color: $text-primary;
+  color: $color-light;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 24px;
